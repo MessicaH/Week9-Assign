@@ -1,0 +1,79 @@
+<html>
+<head>
+    <title>Sign Up Form</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body>
+
+    <header>
+    <!--This is where a Bootstrap nav menu replaced the CSS one-->
+        <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+            <a class="navbar-brand" href="bootStrap.html">Dungeons & Dragons & Bootstraps</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+            aria-control="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="week9-index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="week9-character.html">Build a Character</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="week9-form.html">Sign Up Form</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <div class="header-image">
+                <h1>Sign Up Form</h1>
+                <img src="https://img.freepik.com/premium-photo/epic-fantasy-illustration-featuring-group-heroes-defeating-dragon-beautiful-magic-mysterious-tale-generative-ai_742252-9629.jpg" width=500px alt="Group of heroes defeating a dragon">
+            </div>
+            <div class="form-contents">
+                <h3>Get involved with our next session:</h3>
+                    <form>
+                        <!--This is a text entry field for a form-->
+                        Name<br><input type="text" id="name" placeholder="First and Last"></input><br>
+                        Email<br><input type="email" id="email" placeholder="me@email.yes"></input><br>
+                        <!--This is a radio button list for selecting an option-->
+                        <h4><label for="skill">What is your skill level with the game?</label></h4>
+                            <input type="radio" id="novice" name="skill" value="novice">
+                            <label for="novice">Novice - I'm new to all of this</label><br>
+                            <input type="radio" id="mid=exp" name="skill" value="mid-exp">
+                            <label for="mid-exp">Middle - I've played a bit but looking to refresh my skills</label><br>
+                            <input type="radio" id="expert" name="skill" value="expert">
+                            <label for="expert">Expert - I have led many friends into battle and glorious victory</label>
+                        <!--Added in the correct code for Radio buttons that was missing - was previously allowing for multiple selections as "Name" value wasn't assigned for all three responses.-->
+                        <!--This is a select dropdown menu for an option-->
+                        <h4><label for="schedule">When can you play?</label></h4>
+                            <select id="schedule">
+                                <option id="1st">1st Session (M/W/F)</option>
+                                <option id="2nd">2nd Session (T/Th/Sa)</option>
+                            </select><br>
+                            <br>
+                        <input type="submit" onclick="alert('Thanks for signing up!')" class="button"></input>
+                    </form>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+    <!--This is a footer area.-->
+    <nav id="menu-bottom">
+        <a href="week9-index.html">Home</a>
+        <a href="week9-character.html">Build a Character</a>
+        <a href="week9-form.html">Sign Up Form</a>
+    </nav>
+    </footer>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src ="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>

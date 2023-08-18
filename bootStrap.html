@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 9 - Bootstrap</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        div {
+          border-style: solid;
+          border-color: black;
+          padding: 5px;
+          margin: 5px;  
+        }
+    </style>
+
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <a class="navbar-brand" href="bootStrap.html">Bootstrap Demo</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" 
+        aria-control="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">What We Do</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Who We Are</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" 
+                    aria-haspopup="true" aria-expanded="false">
+                    Dropdown Menu
+                </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="#">Noun</a>
+                        <a class="dropdown-item" href="#">Verb</a>
+                        <a class="dropdown-item" href="#">Adverb</a>
+                    </div>
+                    <!--This is a test of other code to see why the Dropdown menu steps from PromTech video aren't working-->
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                          Dropdown button
+                        </button>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                          <li><a class="dropdown-item" href="#">Action</a></li>
+                          <li><a class="dropdown-item" href="#">Another action</a></li>
+                          <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                      </div>
+                      <!--End of test code-->
+                </li>
+            </ul>
+        </div>
+    </nav>
+    
+<!--These are a bunch of alert or notification messages that appear at the top of a user's browser-->
+    <div class="alert alert-primary" role="alert">
+        It worked! Now we can pull ourselves up by our <b>Bootstrap</b>s!
+    </div>
+
+    <div class="alert alert-secondary">
+        This has been a test of your local browser's system.
+    </div>
+
+    <div class="alert alert-success">
+        <b>Congratulations</b> - you did it!!!
+    </div>
+
+    <div class="alert alert-warning">
+        Failed - that didn't <i>quite</i> work.
+    </div>
+
+    <div class="alert alert-danger">
+        <b>Danger! Danger!</b> - High voltage!
+    </div>
+    <br>
+    <br>
+
+<!--These are a series of buttons for user interaction-->
+    <button class="btn btn-primary">Primary</button>
+    <button class="btn btn-secondary">Secondary</button>
+    <button class="btn btn-success">Success!</button>
+    <button class="btn btn-warning">Failed : /</button>
+    <button class="btn btn-danger">You in danger, gurl</button>
+    <button class="btn btn-info">Info</button>
+    <button class="btn btn-light">Light</button>
+    <button class="btn btn-dark">Dark</button>
+    <button type="button" class="btn btn-link">Linkovich Chomofsky</button>
+    <br>
+    <br>
+
+<!--These are buttons that also work as notifications-->
+    <button class="btn btn-info">
+        Notifications <span class="badge badge-secondary">5</span>
+    </button>
+
+    <h3>Invite Friends <span class="badge badge-primary"> NEW</span></h3>
+    <br>
+    <br>
+
+<!--This is a table on the website with some other bootstrap elements applied to it-->
+
+<table class="table table-dark table-hover">
+    <tr>
+        <th>Name</th>
+        <th>Age (in Human yrs)</th>
+        <th>Type</th>
+    </tr>
+    <tr>
+        <td>Loki</td>
+        <td>8</td>
+        <td>Cat</td>
+    </tr>
+    <tr>
+        <td>Brody</td>
+        <td>3.5</td>
+        <td>Dog</td>
+    </tr>
+    <tr>
+        <td>Leo</td>
+        <td>2.5</td>
+        <td>Cat</td>
+    </tr>
+    <tr>
+        <td>Rosie</td>
+        <td>1.75</td>
+        <td>Dog</td>
+    </tr>
+</table>
+<br>
+<br>
+
+<!--This is the part of the website with stacked rows and columns shown in different colors for visual learning-->
+    <div class="container">
+        <div class="row-1">
+            <div class="col-lg-9">
+                Large column 1 - Container
+            </div>
+             <div class="col-md-6">
+                Medium column 2 - Container
+            </div>
+             <div class="col-sm-3">
+                Small column 3 - Container
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid">
+          <div class="row-1">
+            <div class="col-sm-2">
+                Small column 1 - Container Fluid
+            </div>
+             <div class="col-sm-2">
+                Small column 2 - Container Fluid
+            </div>
+             <div class="col-sm-2">
+                Small column 3 - Container Fluid
+                <div class="row1">
+                    Row 1
+                    <div class="col-sm-inner">
+                        Inner Column 1
+                    </div>
+                    <div class="col-sm-inner">
+                        Inner Column 2
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src ="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>
